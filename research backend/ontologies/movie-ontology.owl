@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#"
+     xml:base="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Adventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Adventure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Award">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Cast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Cast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Crime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Dancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Dancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Horror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Lead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Lead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Length -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Length">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Main -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Main">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Minor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Minor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Musical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Musical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Mystery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Mystery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Performer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Performer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Protagonist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Protagonist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#ReleasedDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#ReleasedDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Romance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Romance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Skit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Skit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Start -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Start">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Storyline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Storyline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Cast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Dancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Performer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Protagonist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Role"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Lead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Main"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Minor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Adventure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Comedy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Crime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Fantasy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Horror"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Musical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Mystery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Romance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Thriller"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#End"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Length"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Start"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Scenario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Skit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Story"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Storyline"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Award"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Characters"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Music"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Plot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Producer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#ReleasedDate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Title"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Actress"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Female"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/movie-ontology.owl#Male"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

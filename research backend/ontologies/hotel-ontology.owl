@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#"
+     xml:base="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Accommodation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Accommodation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#AirCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#AirCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Alcohol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Alcohol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Appetizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Appetizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Booking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brandy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brandy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Breakfast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Breakfast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brunch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brunch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Capacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Capacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#CityCenter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#CityCenter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Clean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Clean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Deposit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Deposit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Dinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Dinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Discount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Discount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#DoubleRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#DoubleRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#FamilyRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#FamilyRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Gym -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Gym">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Heater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Heater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Internet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Internet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Lunch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Lunch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Minibar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Minibar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Offer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Offer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Parking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Parking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Payment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Payment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Pool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Pool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Reception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Reception">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sauna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sauna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SingleRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SingleRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Size">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Snack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Snack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SoftDrinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SoftDrinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Suite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Suite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Surrounding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Surrounding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Whiskey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Whiskey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#WiFi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#WiFi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Internet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Food"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotelService"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Name"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Price"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Rating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Room"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Value"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Airport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#CityCenter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Clean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Railway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sight"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Surrounding"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Cost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Deposit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Discount"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Offer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Payment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Appetizer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Breakfast"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brunch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Dinner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#HotDrinks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Lunch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Snack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SoftDrinks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Water"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Accommodation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#AirCondition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Bed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Capacity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Heater"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Minibar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomService"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#RoomType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Size"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#DoubleRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#FamilyRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#SingleRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Suite"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Booking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Gym"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Internet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Parking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Pool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Quality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Reception"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Sauna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Staff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Transport"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Alcohol"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Beer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Brandy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Whiskey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shannon/ontologies/2019/5/hotel-ontology.owl#Wine"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
